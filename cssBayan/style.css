@@ -1,0 +1,38 @@
+body {
+    font-family: Cabin, sans-serif;
+    background: #f6f6ec;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+details {
+    padding-bottom: 1rem;
+}
+
+details[open] summary {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+summary {
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: dodgerblue;
+}
+
+summary:hover {
+    color: black;
+}
+
+details summary {
+    transition: margin 850ms ease-out;
+}
+
+.main-wrapper {
+    min-width: 25rem;
+}
