@@ -5,12 +5,30 @@ body {
     justify-content: center;
 }
 
+.main-wrapper {
+    min-width: 35rem;
+}
+
+.main-wrapper:hover summary {
+    color: black;
+    cursor: pointer;
+}
+
 h1 {
     font-size: 3rem;
+    border-bottom: 2px solid #dce1e5;
+    padding-bottom: 1rem;
 }
 
 details {
+    padding-top: 1rem;
     padding-bottom: 1rem;
+    border-bottom: 2px solid #dce1e5;
+}
+
+details:hover img,
+details[open] img {
+    display: block;
 }
 
 details[open] summary {
@@ -23,16 +41,15 @@ summary {
     font-weight: 700;
     font-size: 1.5rem;
     color: dodgerblue;
-}
-
-summary:hover {
-    color: black;
-}
-
-details summary {
     transition: margin 850ms ease-out;
 }
 
-.main-wrapper {
-    min-width: 25rem;
+summary:hover img {
+    transform: scale(1.0);
+}
+
+img {
+    display: none;
+    transition: transform 0.9s ease-in-out;
+    transform: scale(0.8);
 }
