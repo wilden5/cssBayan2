@@ -36,6 +36,10 @@ details[open] summary {
     margin-bottom: 1rem;
 }
 
+details[open] .accordion-icon,
+details:hover .accordion-icon{
+    background: url(../cssBayan/assets/close-icon.png) no-repeat;
+}
 summary {
     list-style: none;
     font-weight: 700;
@@ -52,4 +56,35 @@ img {
     display: none;
     transition: transform 0.9s ease-in-out;
     transform: scale(0.8);
+}
+
+.accordion-icon {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    background: url(../cssBayan/assets/open-icon.png) no-repeat;
+}
+
+.main-wrapper:hover .accordion-icon {
+    display: inline-block;
+}
+
+.a1 {
+    margin-left: 160px;
+}
+
+.a2 {
+    margin-left: 265px;
+}
+
+.a3 {
+    margin-left: 323px;
+}
+
+.a4 {
+    margin-left: 316px;
+}
+
+.a5 {
+    margin-left: 282px;
 }
