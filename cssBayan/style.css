@@ -16,14 +16,15 @@ body {
 
 h1 {
     font-size: 3rem;
-    border-bottom: 2px solid #dce1e5;
+    border-bottom: 0.125rem solid #dce1e5;
     padding-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 details {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #dce1e5;
+    border-bottom: 0.125rem solid #dce1e5;
 }
 
 details:hover img,
@@ -33,7 +34,7 @@ details[open] img {
 
 details[open] summary {
     color: black;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 details[open] .accordion-icon,
@@ -48,11 +49,14 @@ summary {
     transition: margin 850ms ease-out;
 }
 
-summary:hover img {
+summary:hover img,
+summary:hover span{
     transform: scale(1.0);
 }
 
 img {
+    margin-top: 0.313rem;
+    padding-left: 4.875rem;
     display: none;
     transition: transform 0.9s ease-in-out;
     transform: scale(0.8);
@@ -63,6 +67,8 @@ img {
     width: 3rem;
     height: 3rem;
     background: url(../cssBayan/assets/open-icon.png) no-repeat;
+    transition: transform 0.9s ease-in-out;
+    transform: scale(0.8);
 }
 
 .main-wrapper:hover .accordion-icon {
@@ -70,21 +76,21 @@ img {
 }
 
 .a1 {
-    margin-left: 160px;
+    margin-left: 10rem;
 }
 
 .a2 {
-    margin-left: 265px;
+    margin-left: 16.563rem;
 }
 
 .a3 {
-    margin-left: 323px;
+    margin-left: 20.188rem;
 }
 
 .a4 {
-    margin-left: 316px;
+    margin-left: 19.75rem;
 }
 
 .a5 {
-    margin-left: 282px;
+    margin-left: 17.625rem;
 }
